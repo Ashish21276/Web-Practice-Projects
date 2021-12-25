@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Payment Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <h1 class="heading">Payment Form</h1>
+        <hr />
+        <h2 class="heading">User Information</h2>
+        <p>
+          Name : *
+          <input type="text" placeholder="Name" name="name" required>
+        </p>
+        <fieldset>
+          <legend>Gender *</legend>
+          <p>
+            Male <input type="radio" id="male" name="gender" required /> Female
+            <input type="radio" id="female" name="gender" required />
+          </p>
+        </fieldset>
+        <p>Address : *
+            <textarea name="" id="" cols="100" rows="10" placeholder="Enter Your Full Address"></textarea>
+        </p>
+        <p>
+            E-mail : * 
+            <input type="email" placeholder="Enter Your Mail id" required>
+        </p>
+        <p>
+            Pin Code : *
+            <input type="number" placeholder="Enter Pin Code" required>
+        </p>
+        <h2 class="heading">Payment Information </h2>
+        <p>Card Type : *
+            <select name="card" id="card" required>
+                <option value="">----Select Card----</option>
+                <option value="visa">Visa</option>
+                <option value="master">Master Card</option>
+                <option value="rupay">Rupay Card</option>
+            </select>
+        </p>
+        <p>Card Number : *
+            <input type="number" placeholder="1111-1111-1111-1111" required>
+        </p>
+        <p>
+            Expiry Date : *
+            <input type="date" required>
+        </p>
+        <p>
+            Cvv : *
+            <input type="password" placeholder="CVV" required>
+        </p>
+        <input type="submit" value="Pay Now">
+      </form>
+    </div>
+  </body>
+</html>
